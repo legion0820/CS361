@@ -1,0 +1,185 @@
+/* styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+header {
+    background-color: #de4e00;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navBar {
+    display: center;
+    justify-content: space-around;
+}
+
+.navLinks {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    gap: 200px;
+}
+
+.navLinks h4 {
+    display: flex;
+    margin: auto;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+}
+
+.title {
+    text-align: center; /* Center the title text horizontally */
+}
+
+.log-title a {
+    background-color: #de4e00;
+}
+
+.home-title a {
+    background-color: #de4e00;
+}
+
+.title a {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.exercise-title a {
+    background-color: #de4e00;
+}
+
+.food-title a {
+    background-color: #de4e00;
+}
+
+.log-title a, .home-title a, .exercise-title a, .food-title a {
+    background-color: #de4e00;
+    color: #000000; /* Change the text color to white */
+    padding: 20px 30px; /* Add padding to create button-like appearance */
+    border: 1px solid #fff; /* Add a border to the buttons */
+    border-radius: 5px; /* Round the corners of the buttons */
+    text-decoration: none;
+    transition: background-color 0.3s; /* Add a smooth color transition on hover */
+}
+
+.log-title a:hover, .home-title a:hover, .exercise-title a:hover, .food-title a:hover {
+    background-color: #ff6600; /* Change the background color on hover */
+    cursor: pointer;
+}
+
+.welcomeContainer {
+    text-align: center;
+    padding: 50px;
+}
+
+.aboutSection {
+    text-align: center;
+    padding: 50px;
+}
+
+.exerciseContainer {
+    text-align: center;
+    padding: 50px;
+}
+
+.exerciseSection {
+    display: flex; 
+    justify-content: space-around;
+    align-items: top;
+}
+
+.foodContainer {
+    text-align: center;
+    padding: 50px;
+}
+
+.foodSection {
+    display: flex; 
+    justify-content: space-around;
+    align-items: top;
+}
+
+.log-header {
+    text-align: center;
+    padding: 20px 20px;
+}
+  
+.log-header h3 {
+    margin: 0;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.log-body {
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.input-title {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.input-title > label {
+    font-weight: 600;
+    flex: 1 40px;
+    margin-right: 10px;
+}
+
+.input-title input {
+    /* font-size: 12px;
+    border: 1px solid #aaa;
+    text-align: left;
+    word-wrap: break-word; */
+    text-align: left;
+    padding: 10px;
+    width: 400px;
+    height: 5px;
+  }
+
+input[type=text] {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+#add-log {
+    font-size: 100%;
+    background-color: #ff6600;
+    min-width: 25%;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+  }
+
+.post {
+  display: inline-block;
+  vertical-align: top;
+  height: 300px;
+  width: 500px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+}
+
+.post-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
