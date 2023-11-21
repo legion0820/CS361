@@ -36,3 +36,38 @@
         
 //     }
 // }
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Function to handle the modal submit button click
+    function handleModalSubmit() {
+        // Get the values from the input fields
+        var logTitle = document.getElementById('name-input').value;
+        var notes = document.querySelector('textarea').value;
+
+        // Create a new log entry HTML
+        var newLogEntry = document.createElement('div');
+        newLogEntry.className = 'post';
+        newLogEntry.innerHTML = `
+            <div class="post-value">
+                <div class="new-log-title">
+                    <h3>${logTitle}</h3>
+                </div>
+                <div class="new-log-notes">
+                    <p>${notes}</p>
+                </div>
+            </div>
+        `;
+
+        // Append the new log entry to the posts section
+        var postsSection = document.getElementById('posts');
+        postsSection.appendChild(newLogEntry);
+
+        // You can also log this information to the console or send it to a server
+        console.log('Log Title:', logTitle);
+        console.log('Notes:', notes);
+    }
+
+    // Add click event listener to the modal submit button
+    var modalSubmitButton = document.getElementById('modal-submit');
+    modalSubmitButton.addEventListener('click', handleModalSubmit);
+});
