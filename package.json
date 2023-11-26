@@ -1,7 +1,17 @@
 {
   "dependencies": {
     "express.js": "^1.0.0",
-    "node": "^21.1.0",
     "node.js": "^0.0.1-security"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "cs361",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

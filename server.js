@@ -1,6 +1,20 @@
 const express = require('express');
 const app = express();
 
+
+app.use(express.json())
+app.use(express.static('public'));
+
+app.use(express.static('public'));
+
+  app.get('/', function (req, res, next) {
+    
+    res.status(200).sendFile(__dirname + '/public/index.html');
+      next()
+  });
+
+
+
 // Define endpoint for supplements request
 app.get('/logs', (req, res) => {
   // Retrieve data on 5 exercise supplements
@@ -20,6 +34,8 @@ function getLog() {
   ];
   return logData;
 }
+
+
 
 // Start the server
 app.listen(3010, () => console.log('Server listening on port 3010'));
